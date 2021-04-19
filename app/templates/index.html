@@ -3,6 +3,7 @@
 <table class="table">
     <thead>
     <tr>
+        <th scope="col">ID</th>
         <th scope="col">Sex</th>
         <th scope="col">Weight_Sep</th>
         <th scope="col">Weight_Apr</th>
@@ -11,14 +12,14 @@
     </tr>
     </thead>
     <tbody>
-    {% for city in cities %}
+    {% for ppl in people %}
     <tr>
-        <td><a href="view/{{people.id}}">{{ people.id }}</a></td>
-        <td>{{ people.Sex }}</td>
-        <td>{{ people.Weight_Sep }}</td>
-        <td>{{ people.Weight_Apr }}</td>
-        <td>{{ people.BMI_Sep }}</td>
-        <td>{{ people.BMI_Apr }}</td>
+        <td><a href="view/{{ppl.id}}">{{ ppl.id }}</a></td>
+        <td>{{ ppl.Sex }}</td>
+        <td>{{ ppl.Weight_Sep }}</td>
+        <td>{{ ppl.Weight_Apr }}</td>
+        <td>{{ ppl.BMI_Sep }}</td>
+        <td>{{ ppl.BMI_Apr }}</td>
     </tr>
     {% endfor %}
     </tbody>
