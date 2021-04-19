@@ -1,4 +1,3 @@
-
 version: "2"
 services:
   app:
@@ -19,4 +18,4 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
     volumes:
-      - ./db:/docker-entrypoint-initdb.d/:rot-initdb.d/:rotrypoint-initdb.d/:ro
+      - ./db:/docker-entrypoint-initdb.d/:ro/docker-entrypoint-initdb.d/:rot-initdb.d/:rotrypoint-initdb.d/:ro
