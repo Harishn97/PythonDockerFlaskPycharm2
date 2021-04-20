@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
-<form action="/edit/{{ppl.id}}" method="post">
+<form action="/edit/{{ppl.id}}" method="post" xmlns="http://www.w3.org/1999/html">
     <div class="row">
         <div class="col">
             <label for="Sex">Sex</label>
@@ -27,7 +27,7 @@
             <input id="BMI_Apr" type="text" class="form-control" placeholder="BMI_Apr" name="BMI_Apr" value="{{ppl.BMI_Apr}}">
         </div>
     </div>
-
+    </br>
     <button type="submit" class="btn btn-success">Save</button>
 
 </form>
