@@ -1,13 +1,13 @@
 {% extends "layout.html" %}
 {% block content %}
-<form action="/edit/{{city.id}}" method="post">
+<form action="/edit/{{ppl.id}}" method="post">
     <div class="row">
         <div class="col">
-            <label for="fldName">City Name</label>
-            <input id="fldName" type="text" class="form-control" placeholder="City Name" name="fldName" value="{{city.fldName}}">
+            <label for="sex">ID</label>
+            <input id="fldName" type="text" class="form-control" placeholder="ID" name="id" value="{{ppl.id}}">
         </div>
         <div class="col">
-            <label for="fldAbbreviation">City Abbreviation</label>
+            <label for="fldAbbreviation">Sex</label>
             <input id="fldAbbreviation" type="text" class="form-control" placeholder="City Abbreviation"
                    name="fldAbbreviation" value="{{city.fldAbbreviation}}">
         </div>
